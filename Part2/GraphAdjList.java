@@ -157,11 +157,11 @@ public class GraphAdjList implements Graph {
 		return -1;
 	}
 
-	// 7. IMPLEMENTATION METHOD getNeighbors:
+	// 7. IMPLEMENTATION METHOD getNeighbors: Creates a list of verts connected to v
 	public LinkedList getNeighbors(int v) {
-		LinkedList<Edge> res = new LinkedList();
+		LinkedList<Edge> res = new LinkedList(); //return value in LinkedList format
 		try {
-			LinkedList<Edge> edgeList = myList[v];
+			LinkedList<Edge> edgeList = myList[v]; //List of edges
 			for (int i = 0; i < edgeList.size(); i++) {
 				res.add(edgeList.get(i));
 			}
