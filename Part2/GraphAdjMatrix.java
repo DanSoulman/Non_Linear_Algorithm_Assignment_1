@@ -1,3 +1,4 @@
+//R00151926 Dan Coleman CS4
 import java.util.LinkedList;
 
 /*
@@ -16,8 +17,7 @@ public class GraphAdjMatrix implements Graph {
         matrix = new int[V][V]; // Creates new Matrix
         for (int x = 0; x < V; x++) { // Loops through x-axis
             for (int y = 0; y < V; y++) { // Loops through y-axis
-                matrix[x][y] = -1; // Creates a -1 in each position as the default. Other values are populated in
-                                   // Rest 2
+                matrix[x][y] = -1; // Creates a -1 in each position as the default. Other values are populated in later tests
             }
         }
     }
@@ -46,7 +46,7 @@ public class GraphAdjMatrix implements Graph {
     }
 
     // 3. IMPLEMENTATION METHOD addEdge: Add Edge between vertices with weight
-    // v1: Vertix 1, v2: Vertix 2, w: Weight of edge
+    // v1: Vertix 1, v2: Vertix 2, w: Weight of edge THESE APPLY TO EACH FUNCTION 
     public void addEdge(int v1, int v2, int w) {
         // We use a try so we can catch the Out of Bounds
         try {
